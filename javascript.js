@@ -356,84 +356,85 @@
 
 // console.log(allStudentsPassedTheCourse) 
 
-const previous = 200;
-const current= [
-  {item:'Guitar',amount:200},
-  {item:'Mic',amount:100},
-  {item:'Strap',amount:100}
-]
+// const previous = 200;
+// const current= [
+//   {item:'Guitar',amount:200},
+//   {item:'Mic',amount:100},
+//   {item:'Strap',amount:100}
+// ]
 
-const results = current.reduce(function(sum,expense){
-  return sum + expense.amount
-},0)
+// const results = current.reduce(function(sum,expense){
+//   return sum + expense.amount
+// },0)
 
-console.log(results)
+// console.log(results)
 
 
-const users = [
-  {
-    name:"Francis",
-    lastname:"Norton",
-    age:25
-  },
-  {
-    name:"Martha",
-    lastname:"Norton",
-    age:25
-  },
-  {
-    name:"Rob",
-    lastname:"Norton",
-    age:25
-  }
-]
+// const users = [
+//   {
+//     name:"Francis",
+//     lastname:"Norton",
+//     age:25
+//   },
+//   {
+//     name:"Martha",
+//     lastname:"Norton",
+//     age:25
+//   },
+//   {
+//     name:"Rob",
+//     lastname:"Norton",
+//     age:25
+//   }
+// ]
 
-const name = users.reduce(function(start,user){
+// const name = users.reduce(function(start,user){
   
-  start.push(user.name)
+//   start.push(user.name)
 
-  return start;
+//   return start;
 
-},[])
+// },[])
 
-console.log(name)
+// console.log(name)
 
-// We need to calculate how many Km or Miles the user traveled.
+// // We need to calculate how many Km or Miles the user traveled.
 
-const trips = [
-   {to:'Brazil',distance:1000},
-   {to:'Chine',distance: 2500},
-   {to:'India',distance: 3000}
-]
+// const trips = [
+//    {to:'Brazil',distance:1000},
+//    {to:'Chine',distance: 2500},
+//    {to:'India',distance: 3000}
+// ]
 
-const travel = trips.reduce(function(sum,destination){
+// const travel = trips.reduce(function(sum,destination){
 
-  return sum + destination.distance
+//   return sum + destination.distance
 
-},0)
+// },0)
 
-console.log(`You traveled ${travel} miles`)
+// console.log(`You traveled ${travel} miles`)
 
-//We have an object with computers. And what we want to know, HOW many computer we have with MAC and how many with WINDOWS.
+// //We have an object with computers. And what we want to know, HOW many computer we have with MAC and how many with WINDOWS.
 
-const computers = [
-   {type:'Laptop',price:124, os:'Windows'},
-   {type:'Desk',price:124, os:'Mac'},
-   {type:'Desk',price:124, os:'Windows'},
-   {type:'Laptop',price:124, os:'Mac'},
-   {type:'Laptop',price:124, os:'Windows'},
-];
+// const computers = [
+//    {type:'Laptop',price:124, os:'Windows'},
+//    {type:'Desk',price:124, os:'Mac'},
+//    {type:'Desk',price:124, os:'Windows'},
+//    {type:'Laptop',price:124, os:'Mac'},
+//    {type:'Laptop',price:124, os:'Windows'},
+// ];
 
-let ostypes = computers.reduce(function(start, item){
+// let ostypes = computers.reduce(function(start, item){
 
-  return item.os === 'Mac'? {mac:start.mac + 1,windows:start.windows}:{mac:start.mac ,windows:start.windows+ 1};
+//   return item.os === 'Mac'? {mac:start.mac + 1,windows:start.windows}:{mac:start.mac ,windows:start.windows+ 1};
   
-  if(item.os === 'Mac'){
-    return {mac:start.mac + 1,windows:start.windows}
-  }else{
-    return {mac:start.mac ,windows:start.windows+ 1}
-  }
+//   if(item.os === 'Mac'){
+//     return {mac:start.mac + 1,windows:start.windows}
+//   }else{
+//     return {mac:start.mac ,windows:start.windows+ 1}
+//   }
 
-},{mac:0,windows:0})
+// },{mac:0,windows:0})
 
-console.log(ostypes)
+// console.log(ostypes)
+
