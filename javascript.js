@@ -487,3 +487,43 @@
 // const multiple = x =>  x*10;
 // console.log(multiple(2))
 
+// const cars = {
+//   brands:['Ford','Ferrari','BMW'],
+//   category:'Sports Car',
+//   message: function(){
+//     let $this = this;
+//     return $this.brands.map(function(brand){
+//       console.log(`${brand} is a ${$this.category}`)
+//     })
+//   }
+// }
+
+// cars.message()
+
+// const cars = {
+//   brands:['Ford','Ferrari','BMW'],
+//   category:'Sports Car',
+//   message: function(){
+//     return this.brands.map((brand) => {
+//       console.log(`${brand} is a ${this.category}`)
+//     })
+//   }
+// }
+
+// cars.message()
+
+// var names= ["James","Ron","Lisa","Tommy"];
+// var randomName = function(items){
+//  return items[Math.floor(Math.random()*items.length)]
+// }
+// var randomNumber = function(maxNumber,minNumber){
+//  return Math.floor(Math.random() * maxNumber) + minNumber;
+// }
+
+// console.log(randomName(names) + " magic number is " + randomNumber(5,2))
+
+const names= ["James","Ron","Lisa","Tommy"];
+let randomName = (items) =>items[Math.floor(Math.random()*items.length)]
+let randomNumber = (maxNumber,minNumber) => Math.floor(Math.random() * maxNumber) + minNumber;
+
+console.log(`${randomName(names)} magic number is ${randomNumber(5,2)}`)
