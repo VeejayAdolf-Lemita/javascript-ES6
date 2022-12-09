@@ -522,8 +522,31 @@
 
 // console.log(randomName(names) + " magic number is " + randomNumber(5,2))
 
-const names= ["James","Ron","Lisa","Tommy"];
-let randomName = (items) =>items[Math.floor(Math.random()*items.length)]
-let randomNumber = (maxNumber,minNumber) => Math.floor(Math.random() * maxNumber) + minNumber;
+// const names= ["James","Ron","Lisa","Tommy"];
+// let randomName = (items) =>items[Math.floor(Math.random()*items.length)]
+// let randomNumber = (maxNumber,minNumber) => Math.floor(Math.random() * maxNumber) + minNumber;
 
-console.log(`${randomName(names)} magic number is ${randomNumber(5,2)}`)
+// console.log(`${randomName(names)} magic number is ${randomNumber(5,2)}`)
+
+
+// Refactor the code, make it really slim :)
+
+// var name = "Francis";
+// var lastname = "Jones"
+// var age = 23;
+// var obj
+// function createObject(name,lastname,age){
+//    obj = {
+//        name:name,
+//        lastname:lastname,
+//        age:age,
+//    }
+//    return obj;
+// }
+// console.log(createObject(name,lastname,age))
+
+
+// let createObject = (name,lastname,age) => {
+//   return {name,lastname,age}
+// }
+// console.log(createObject("Francis","Jones",23))
