@@ -438,3 +438,52 @@
 
 // console.log(ostypes)
 
+
+//For of
+
+
+// const users = ['Neil','Menard','Veejay']
+
+// for(let user of users){
+//   console.log(user)
+// }
+
+
+// const numbers = [10,20,30,40,50];
+// let total = 0
+
+// for(let number of numbers){
+//    total += number
+// }
+
+// console.log(total)
+
+
+// Fat arrow function 
+
+// const value = function(name,age){
+//   return `My name is ${name} and age ${age}`
+// }
+
+// console.log(value("Veejay",25))
+
+// const result = (name,age) => {
+//   return `My name is ${name} and age ${age}`
+// }
+
+// console.log(result("Veejay",25))
+
+// //Fat arrow function single expression
+
+// const sum = (x,y) => {
+//   return x+y;
+// }
+// console.log(sum(1,2))
+
+
+// const diff = (x,y) =>  x-y;
+// console.log(diff(1,2))
+
+// const multiple = x =>  x*10;
+// console.log(multiple(2))
+
